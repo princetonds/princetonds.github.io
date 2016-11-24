@@ -1,0 +1,1 @@
+Pictures must be square!
