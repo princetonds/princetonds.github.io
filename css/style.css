@@ -934,10 +934,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .pic {
-  margin-bottom: 0px;
-/*  overflow: hidden;
-  height: 180px;
-*/}
+  margin-bottom: 10px;
+}
 
 #team .member .pic img {
   max-width: 100%;
