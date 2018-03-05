@@ -1,0 +1,44 @@
+.program {
+    padding: 40px;
+}
+
+.program h3 {
+    color: black;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+
+.section {
+    padding-top: 100px;
+}
+
+
+#programs {
+    padding: 60px 0;
+}
+
+#clients {
+    padding: 60px 0;
+}
+
+.sponsor-title {
+    padding-bottom: 15px;
+}
+
+.profile-description {
+    font-size: 14px;
+}
+
+.arjun {
+    font-size: 15px !important;
+    line-height: 22px;
+}
+
+.links p {
+    line-height: 12px;
+}
+
+.presidents {
+    color: #999999;
+    font-size: 16px;
+}

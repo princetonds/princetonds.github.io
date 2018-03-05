@@ -1,54 +1,28 @@
-// typewriter
+var i = 0;
+var j = 0;
+var txt = 'Break things, make things, analyze things'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
 
-// 3215287
-// bertaec32@gmail.com
-(function($, w, d, undefined) {
+function typeWriter() {
+  target = document.getElementById("typewriter");
 
-  function typewriter() {
+  var new_speed = speed + 3 * (Math.random() - 0.5);
 
-    // Globals 
-    var self = this, speed;
+  if (i < txt.length) {
+    target.innerHTML += txt.charAt(i);
 
-    function init(element, options) {
-            // Set Globals
-      var str;
-      var indice = 0;
-
-      self.options = $.extend( {}, $.fn.typewriter.options, options );
-      $currentElement = $(element);
-      elementStr = $currentElement.text().replace(/\s+/g, ' ');
-      dataSpeed  = $currentElement.data("speed") || self.options.speed;
-      $currentElement.empty();
-      var showText = setInterval(
-				function(){
-					if (indice++ < elementStr.length) {
-			      $currentElement.append(elementStr[indice - 1]);
-			    }else{
-			    	clearInterval(showText);
-			    }
-				}, dataSpeed);
-      // self.animation = setInterval(function(){animate_calification()}, 20);
+    if (txt.charAt(i) == ',') {
+      new_speed += 300;
     }
 
-    
-    
-    // Metodos publicos
-    return {
-      init: init
-    }
+    setTimeout(typeWriter, new_speed);
+    console.log(i);
   }
+  else if (i == txt.length) {
+    document.getElementById("typewriter").innerHTML += ' <span class="blinking">|</span>'
+    setTimeout(typeWriter, new_speed);    
+  }
+  i++;
+}
 
-  // Plugin jQuery
-  $.fn.typewriter = function(options) {
-    return this.each(function () {
-    	var writer =  new typewriter();
-      writer.init(this, options);
-      $.data( this, 'typewriter', writer);
-    });
-  };
-
-  $.fn.typewriter.options = {
-    'speed' : 300
-  };
-
-})(jQuery, window, document);
+typeWriter()

@@ -1,296 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Princeton Data Science (PDS)</title>
-	<meta name="description" content="Princeton Data Science (PDS) was founded in 2014-2015 to promote the practice and study of data science, a growing field that spans many disciplines such as statistics, machine learning, computer science, and business analytics." />
-	<meta name="keywords" content="princeton, princeton university, data, data science, machine learning, statistics, computer science, analytics" />
-	<meta name="author" content="Ji-Sung Kim for PDS" />
-    <link rel="canonical" href="https://princetonds.io">
+  <meta charset="utf-8">
+  <title>Princeton Data Science (PDS)</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-	<!-- Favicons (created with http://realfavicongenerator.net/)-->
-	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="/img/favicons/manifest.json">
-	<link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#49acad">
-	<link rel="shortcut icon" href="/img/favicons/favicon.ico">
-	<meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Facebook Graph tags -->
-    <meta property="og:url" content="https://princetonds.io" />
-    <meta property="og:site_name" content="princetonds.io" />
-    <meta property="og:title" content="Princeton Data Science (PDS)" />
-	<meta name="og:description" content="Princeton Data Science (PDS) was founded in 2014-2015 to promote the practice and study of data science, a growing field that spans many disciplines such as statistics, machine learning, computer science, and business analytics." />
-    <meta property="og:image" content="https://princetonds.io/img/500px_square_logo.png" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,400,700" rel="stylesheet">
 
-	<!-- Normalize -->
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<!-- Owl -->
-	<link rel="stylesheet" type="text/css" href="css/owl.css">
-	<!-- Animate.css -->
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
-	<!-- Elegant Icons -->
-	<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
-	<!-- Main style -->
-	<link rel="stylesheet" type="text/css" href="css/cardio.css">
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/new.css" rel="stylesheet">
 </head>
 
 <body>
- 	<div class="preloader">
-  	</div>
-	<nav class="navbar">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><img src="img/logo.png" data-active-url="img/logo-active.png" alt=""></a>
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right main-nav">
-					<li><a href="#intro">Intro</a></li>
-					<li><a href="#services">Programs</a></li>
-					<li><a href="#team">About</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
-	</nav>
-	<header id="intro">
-		<div class="container">
-			<div class="table">
-				<div class="header-text">
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<h3 class="light white">Using data to see the world</h3>
-							<h1 class="white typed">Break things, make things, analyze things</h1>
-							<span class="typed-cursor">|</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	<section id="services" class="section section-padded">
-		<div class="container">
-			<div class="row text-center title">
-				<h2>Programs</h2>
-				<h4 class="light muted">We engage the Princeton University community with 3 core programs:</h4>
-			</div>
-			<div class="row services">
-				<div class="col-md-4">
-					<div class="service">
-						<div class="icon-holder">
-							<img src="img/icons/mic.png" alt="" class="icon">
-						</div>
-						<h4 class="heading">Data@</h4>
-						<p class="description">We host data science guest speakers who share how they use data science in their work. </p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="service">
-						<div class="icon-holder">
-							<img src="img/icons/network.png" alt="" class="icon">
-						</div>
-						<h4 class="heading">DataDebut</h4>
-						<p class="description">We hold student-led workshops to introduce methods and applications of data science. </p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="service">
-						<div class="icon-holder">
-							<img src="img/icons/trophy.png" alt="" class="icon">
-						</div>
-						<h4 class="heading">DataDev</h4>
-						<p class="description">We train, sponsor and help organize student teams to compete in top data science and machine learning competitions and work on collaborative projects.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="cut cut-bottom"></div>
-	</section>
-	<section id="team" class="section gray-bg">
-		<div class="container">
-			<div class="row title text-center" style="padding-bottom: 50px;">
-				<h2 class="margin-top">About</h2>
-				<h4 class="light muted">The people behind the scenes</h4>
-			</div>
 
-		<div class="row">
-			<div class="col-md-3">
-				<div class="team text-center" style="background: rgba(200, 200, 200, .15); height: 380px;">
-					<img src="img/team/team_cathy.jpg" alt="Team Image" class="avatar">
-					<div class="title">
-						<h4>Cathy Chen</h4>
-						<h5 class="muted regular">Co-President</h5>
-					</div>
-					<p style="margin: 15px;">Excited about using ML and statistics to understand data in neuroscience.</p>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="team text-center" style="background: rgba(141, 191, 267, .15); height: 380px;">
-					<img src="img/team/team_rohan.jpg" alt="Team Image" class="avatar">
-					<div class="title">
-						<h4>Rohan Rao</h4>
-						<h5 class="muted regular">Co-President</h5>
-					</div>
-					<p style="margin: 15px;">Trying to engineer creative solutions using data. </p>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="team text-center" style="background: rgba(110, 196, 199, .15); height: 380px;">
-					<img src="img/team/team_anna.jpg" alt="Team Image" class="avatar">
-					<div class="title">
-						<h4>Anna Matlin</h4>
-						<h5 class="muted regular">President Emeritus</h5>
-					</div>
-					<p style="margin: 15px;">Passionate about data science as a form of storytelling in politics, sports, and medicine.</p>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="team text-center" style="background: rgba(141, 191, 267, .15); height: 380px;">
-					<img src="img/team/team_jisung.jpg" alt="Team Image" class="avatar">
-					<div class="title">
-						<h4><a href="https://jisungkim.com">Ji-Sung Kim</a></h4>
-						<h5 class="muted regular">Director of Communications</h5>
-					</div>
-					<p style="margin: 15px;">Working on solving the hardest problems in data using machine learning and <a href="https://deepjazz.io">deep learning.</a></p>
-				</div>
-			</div>
-                	<div class="col-md-3"> </div>
-            	</div>
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto"><img class="navbar-logo" src="img/inverted-logo.svg"></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#programs">Programs</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="media/sponsorship.pdf">Sponsorship</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-text">
+      <h3>Using data to see the world</h3>
+      <h2 id="typewriter"></h2>
+      <noscript><h2>Break things, make things, analyze things <span class="blinking">|</span></h2></noscript>
+      <a href="#programs" class="btn-get-started scrollto">We are Princeton Data Science</a>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+    Programs Section
+    ============================-->
+    <section id="programs" class="section-bg">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h3 class="section-title">Programs</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">
+            Princeton Data Science (PDS) fosters the study and practice of data science and machine learning <br>within the Princeton University community through three core programs.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 program">
+            <h3 class="text-center">Data@</h3>
+            <p>We host guest speakers from industry teams and academic groups who share how they use data science in their work. If you would like to sponsor a Data@ event, please see our <a href="media/sponsorship.pdf">sponsorship guide</a>.</p>
+          </div>
+          <div class="col-lg-4 program">
+            <h3 class="text-center">DataDebut</h3>
+            <p>We hold student-led workshops to introduce methods and applications of data science to interested students.</p>
+          </div>
+          <div class="col-lg-4 program">
+            <h3 class="text-center">DataDev</h3>
+            <p>We train, host and help organize student teams to compete in top data science and machine learning competitions and work on collaborative projects.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #programs -->
+
+    <!--==========================
+      Product Advanced Featuress Section
+    ============================-->
+    <!-- <section id="advanced-features">
+
+      <div class="features-row section-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img class="advanced-feature-img-right wow fadeInRight" src="img/advanced-feature-1.jpg" alt="">
+              <div class="wow fadeInLeft">
+                <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
+                <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img class="advanced-feature-img-left" src="img/advanced-feature-2.jpg" alt="">
+              <div class="wow fadeInRight">
+                <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
+                <i class="ion-ios-paper-outline" class="wow fadeInRight" data-wow-duration="0.5s"></i>
+                <p class="wow fadeInRight" data-wow-duration="0.5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <i class="ion-ios-color-filter-outline wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s"></i>
+                <p class="wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                <i class="ion-ios-barcode-outline wow fadeInRight" data-wow-delay="0.4" data-wow-duration="0.5s"></i>
+                <p class="wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="0.5s">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-row section-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img class="advanced-feature-img-right wow fadeInRight" src="img/advanced-feature-3.jpg" alt="">
+              <div class="wow fadeInLeft">
+                <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
+                <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <i class="ion-ios-albums-outline"></i>
+                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> --><!-- #advanced-features -->
 
 
-		<div class="row">
-			<div class="col-md-3">
-				<div class="team text-center" style="background: rgba(141, 191, 267, .15); height: 380px;">
-					<img src="img/team/team_kevin.jpg" alt="Team Image" class="avatar">
-					<div class="title">
-						<h4>Kevin Liu</h4>
-						<h5 class="muted regular">Director of Data@</h5>
-					</div>
-					<p style="margin: 15px;">Interested in applications of data to fields less traditionally data-oriented.</p>
-				</div>
-			</div>
-			<div class="col-md-3">
-			    <div class="team text-center" style="background: rgba(110, 196, 199, .15); height: 380px;">
-				<img src="img/team/team_yash.jpg" alt="Team Image" class="avatar">
-				<div class="title">
-				    <h4>Yash Patel</h4>
-				    <h5 class="muted regular">Adviser on DataDev</h5>
-				</div>
-				<p style="margin: 15px;">Studying math and computer science; extremely interested in AI, NLP, and busting some sweet dance moves.</p>
-			    </div>
-			</div>
-			<div class="col-md-3">
-			    <div class="team text-center" style="background: rgba(141, 191, 267, .15); height: 380px;">
-				<img src="img/team/team_francine.jpg" alt="Team Image" class="avatar">
-				<div class="title">
-				    <h4>Francine Camacho</h4>
-				    <h5 class="muted regular">Graduate Student Chair</h5>
-				</div>
-				<p style="margin: 15px;">Using data science to tackle and answer biological questions: the stuff of life is data!</p>
-			    </div>
-			</div>
-			<div class="col-md-3">
-				<div class="team text-center" style="background: rgba(200, 200, 200, .15); height: 380px;">
-					<img src="img/team/team_maddi.jpg" alt="Team Image" class="avatar">
-					<div class="title">
-						<h4>Maddi Ross</h4>
-						<h5 class="muted regular">Treasurer</h5>
-					</div>
-					<p style="margin: 15px;">Interested in data as a lens for studying history</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	</section>
+    <!--==========================
+      Sponsors
+    ============================-->
+    <section id="sponsors">
+      <div class="container">
+        <h3 class="text-center sponsor-title">
+          Our generous sponsors:
+        </h3>
+        <div class="row wow fadeInUp">
 
-	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content modal-popup">
-				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
-				<h3 class="white">Sign Up</h3>
-				<form action="https://formspree.io/princetondatasci@gmail.com" method="POST" class="popup-form">
-					<input type="text" class="form-control form-white" name="name" id="name" placeholder="Full Name (e.g., James Kim)" required>
-					<input type="email" class="form-control form-white" name="email" id="email" placeholder="Email Address (e.g., jk@uni.edu)" required>
-					<div class="checkbox-holder text-left">
-						<div class="checkbox">
-							<input type="checkbox" value="Agree to receive emails" id="check" name="check" required>
-							<label for="check"><span>I agree to receive emails from PDS or its members</span></label>
-						</div>
-					</div>
-					<input type="hidden" name="_next" value="https://princetonds.io" />
-					<input type="hidden" name="_subject" value="[FORM] Signup from website" />
-					<button type="submit" class="btn btn-submit">Submit</button>
-				</form>
-			</div>
-		</div>
-	</div>
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 text-center-mobile">
-					<h3 class="white">Contact us!</h3>
-					<h5 class="light regular light-white">General Information</h5>
-					<a href="mailto:princetondatasci@gmail.com" class="white">princetondatasci@gmail.com</a>
+          <div class="col-md-2">
+            <img src="img/sponsors/csml.jpg" alt="">
+          </div>
 
-					<h5 class="light regular light-white">Corporate Outreach</h5>
-					<a href="mailto:cathy.chen@princeton.edu>" class="white">cathy.chen@princeton.edu</a>
-					<p><br></p>
-				</div>
-				<div class="col-sm-6 text-center-mobile">
-					<h3 class="white">Meetings</h3>
-                    <h5 class="light-white light">Contact us for more information!</h5>
-                    <!--
-					<h5 class="light-white light">Typically every Monday</h5>
-					<h5 class="light-white light">@ dummy_LOCATION </h5>
-					<h3 class="regular white">21:00 - 22:00</h3>
-                    -->
-				</div>
-			</div>
-			<div class="row bottom-footer text-center-mobile">
-				<div class="col-sm-8">
-					<p>&copy; All Rights Reserved. Made by <a href="http://jisungkim.com" class="white">Ji-Sung Kim</a> for Princeton Data Science</p>
-				</div>
-				<div class="col-sm-4 text-right text-center-mobile">
-					<ul class="social-footer">
-						<li><a href="http://www.facebook.com/pages/Codrops/159107397912"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="http://www.twitter.com/codrops"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://plus.google.com/101095823814290637419"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- Holder for mobile navigation -->
-	<div class="mobile-nav">
-		<ul>
-		</ul>
-		<a href="#" class="close-link"><i class="arrow_up"></i></a>
-	</div>
-	<!-- Scripts -->
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/typewriter.js"></script>
-	<script src="js/jquery.onepagenav.js"></script>
-	<script src="js/main.js"></script>
+          <div class="col-md-2">
+            <img src="img/sponsors/odus.png" alt="">
+          </div>
+
+          <!-- <div class="col-md-2">
+            <img src="img/sponsors/client-3.png" alt="">
+          </div>
+
+          <div class="col-md-2">
+            <img src="img/sponsors/client-4.png" alt="">
+          </div>
+
+          <div class="col-md-2">
+            <img src="img/sponsors/client-5.png" alt="">
+          </div>
+
+          <div class="col-md-2">
+            <img src="img/sponsors/client-6.png" alt="">
+          </div> -->
+
+        </div>
+      </div>
+    </section><!-- #more-features -->
+
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 text-center text-lg-left">
+            <h3 class="cta-title">Sponsor PDS!</h3>
+            <p class="cta-text">PDS relies on the generous support of industry and university groups to host educational events and support student members. If you are interested in hosting an event on campus or supporting our efforts, please see our <a href="media/sponsorship.pdf">sponsorship guide</a>.</p>
+          </div>
+          <div class="col-lg-4 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="media/sponsorship.pdf">Sponsorship Guide</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Our Team Section
+    ============================-->
+    <section id="team" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Our Team</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">PDS is run by a board of bright and motivated Princeton University students.</p>
+        </div>
+        <div class="row wow fadeInUp">
+          <div class="col-lg-3">
+          </div>
+
+          <div class="col-lg-2 col-lg-offset-2 col-md-4">
+            <div class="member">
+              <div class="pic"><a href="https://jisungkim.com"><img src="img/team/jisung.jpg" alt=""></a></div>
+              <h4>Ji-Sung Kim</h4>
+              <span>Co-President</span>
+              <div class="social">
+                <p class="profile-description">Working on solving the hardest problems in machine learning. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <div class="member">
+              <div class="pic"><img src="img/team/rohan.jpg" alt=""></div>
+              <h4>Rohan Rao</h4>
+              <span>Co-President</span>
+              <div class="social">
+                <p class="profile-description">Trying to engineer creative solutions using data.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <div class="member">
+              <div class="pic"><img src="img/team/maddi.jpg" alt=""></div>
+              <h4>Maddi Ross</h4>
+              <span>Treasurer</span>
+              <div class="social">
+                <p class="profile-description">Interested in data as a lens for studying history.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row wow fadeInUp">
+          <div class="col-lg-2 col-md-4">
+            <div class="member">
+              <div class="pic"><a href="https://jisungkim.com"><img src="img/team/jessica.jpg" alt=""></a></div>
+              <h4>Jessica Deng</h4>
+              <span>Director, DataDev</span>
+              <div class="social">
+                <p class="profile-description">Working on solving the hardest problems in machine learning. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <div class="member">
+              <div class="pic"><img src="img/team/adam.jpg" alt=""></div>
+              <h4>Adam Kelly</h4>
+              <span>Director, DataDev</span>
+              <div class="social">
+                <p class="profile-description">Trying to engineer creative solutions using data.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <div class="member">
+              <div class="pic"><img src="img/team/arjun.jpg" alt=""></div>
+              <h4 class="arjun">Arjun Subramaniam</h4>
+              <span>Director, Data@</span>
+              <div class="social">
+                <p class="profile-description">Interested in data as a lens for studying history.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <div class="member">
+              <div class="pic"><img src="img/team/tim.jpg" alt=""></div>
+              <h4>Tim Tang</h4>
+              <span>Director, Data@</span>
+              <div class="social">
+                <p class="profile-description">Interested in data as a lens for studying history.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <div class="member">
+              <div class="pic"><img src="img/team/niranjan.jpg" alt=""></div>
+              <h4>Niranjan Shankar</h4>
+              <span>Director, DataDebut</span>
+              <div class="social">
+                <p class="profile-description">Interested in data as a lens for studying history.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <div class="member">
+              <div class="pic"><img src="img/team/matteo.jpg" alt=""></div>
+              <h4>Matteo Russo</h4>
+              <span>Director, DataDebut</span>
+              <div class="social">
+                <p class="profile-description">Interested in data as a lens for studying history.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <hr>
+            <p class="presidents text-center">Presidents Emeritus: Evan Chow (Snap), Eddie Zhou (Google Brain),  Anna Matlin (Airbnb)</p>
+          </div>
+        </div>
+      </div>
+
+
+    </section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container">
+        <div class="row wow fadeInUp">
+          <div class="contact-about">
+            <div class="col-lg-12 col-md-12">
+              <h3>Contact Us</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="row wow fadeInUp">
+          <div class="col-lg-8 col-md-6">
+            <p>Please do note that Princeton Data Science is a student organization and not a university department. Consequently, we do not sponsor PhD or Masters students.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 links">
+            <p><i class="fa fa-envelope fa-fw"></i> hello [at] princetonds.io</p>
+            <p><i class="fa fa-facebook-square fa-fw"></i> <a href="https://www.facebook.com/princetonds" class="facebook">Like us on <strong>Facebook</strong>!</a></p>
+          </div>
+        </div>
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Princeton Data Science</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#intro" class="scrollto">Home</a>
+            <a href="#programs" class="scrollto">Programs</a>
+            <a href="#team" class="scrollto">Team</a>
+            <a href="media/sponsorship.pdf">Sponsorship</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script src="js/typewriter.js"></script>
+
 </body>
-
 </html>
