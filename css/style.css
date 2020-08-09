@@ -1,4 +1,3 @@
-.blinking {
   animation: blink 1s infinite;
 }
 
@@ -195,6 +194,84 @@ h1, h2, h3, h4, h5, h6 {
   color: #8ec9cb;
   background: #fff;
 }
+
+/*--------------------------------------------------------------
+# Team Intro Section
+--------------------------------------------------------------*/
+#teamintro {
+  width: 100%;
+  height: 12vh;
+  background: linear-gradient(45deg, #21b2b5, #8ec9cb);
+  position: relative;
+}
+
+#teamintro .team-intro-text {
+  position: absolute;
+  left: 0;
+  top: 300px;
+  right: 0;
+  height: calc(50% - 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#teamintro h2 {
+  margin: 0px 0 50px 0;
+  padding: 0 15px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  color: #fff;
+}
+
+#teamintro h3 {
+  margin: 30px 0 10px 0;
+  padding: 0 15px;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 56px;
+  color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  #teamintro h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  #teamintro p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+#teamintro .btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#teamintro .btn-get-started:hover {
+  color: #8ec9cb;
+  background: #fff;
+}
+
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -938,7 +1015,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .pic img {
-  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 24%;
+  border-radius: 15px;
+
 }
 
 #team .member h4 {
@@ -969,6 +1051,54 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
   margin: 0 2px;
 }
+
+#team .member2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#team .member2 .pic {
+  margin-bottom: 10px;
+}
+
+#team .member2 h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+
+}
+
+#team .member2 span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+#team .member2 .social {
+  margin-top: 15px;
+}
+
+#team .member2 .social a {
+  color: #b3b3b3;
+}
+
+#team .member2 .social a:hover {
+  color: #8ec9cb;
+}
+
+#team .member2 .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+#team .member2 .pic img {
+  max-width: 100%;
+  border-radius: 15px;
+
+  /* border-radius: 50%; */
+
+}
+
 
 /* Gallery Section
 --------------------------------*/
