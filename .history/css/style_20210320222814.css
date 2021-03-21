@@ -1100,59 +1100,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member2 .pic img {
-  max-width: 72%;
+  max-width: 100%;
   border-radius: 15px;
 
   /* border-radius: 50%; */
 
 }
 
-#team .member3 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#team .member3 .pic {
-  margin-bottom: 10px;
-}
-
-#team .member3 h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-
-}
-
-#team .member3 span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-
-#team .member3 .social {
-  margin-top: 15px;
-}
-
-#team .member3 .social a {
-  color: #b3b3b3;
-}
-
-#team .member3 .social a:hover {
-  color: #8ec9cb;
-}
-
-#team .member3 .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-#team .member3 .pic img {
-  max-width: 100%;
-  border-radius: 5px;
-
-  /* border-radius: 50%; */
-
-}
 
 /* Gallery Section
 --------------------------------*/

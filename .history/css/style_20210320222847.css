@@ -1112,43 +1112,43 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
-#team .member3 .pic {
+#team .member2 .pic {
   margin-bottom: 10px;
 }
 
-#team .member3 h4 {
+#team .member2 h4 {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
 
 }
 
-#team .member3 span {
+#team .member2 span {
   font-style: italic;
   display: block;
   font-size: 13px;
 }
 
-#team .member3 .social {
+#team .member2 .social {
   margin-top: 15px;
 }
 
-#team .member3 .social a {
+#team .member2 .social a {
   color: #b3b3b3;
 }
 
-#team .member3 .social a:hover {
+#team .member2 .social a:hover {
   color: #8ec9cb;
 }
 
-#team .member3 .social i {
+#team .member2 .social i {
   font-size: 18px;
   margin: 0 2px;
 }
 
-#team .member3 .pic img {
-  max-width: 100%;
-  border-radius: 5px;
+#team .member2 .pic img {
+  max-width: 72%;
+  border-radius: 15px;
 
   /* border-radius: 50%; */
 

@@ -1146,9 +1146,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 2px;
 }
 
-#team .member3 .pic img {
-  max-width: 100%;
-  border-radius: 5px;
+#team .member2 .pic img {
+  max-width: 72%;
+  border-radius: 15px;
 
   /* border-radius: 50%; */
 
