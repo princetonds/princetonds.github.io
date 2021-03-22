@@ -38,6 +38,9 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/new.css" rel="stylesheet">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
 </head>
 
 <body>
@@ -116,7 +119,7 @@
           <div class="col-lg-4 col-md-6 links">
             <br>
             <br>
-            <p><i class="fa fa-external-link fa-fw"></i>   <a href="https://eval.ai/web/challenges/challenge-page/871/overview">Link to the Challenge: Sign Up Here!</a>
+            <p><i style="font-size:20px;" class="fa fa-external-link fa-fw"></i>   <a style="font-size:20px;" href="https://eval.ai/web/challenges/challenge-page/871/overview">Link to the Challenge: <br> <br> Sign Up Here!</a>
             </p>
             <p><i class="fa fa-facebook-square fa-fw"></i> <a href="https://www.facebook.com/princetonds" class="facebook">Like us on <strong>Facebook</strong>!</a></p>
           </div>
@@ -143,10 +146,21 @@
       <div class="section-header">
         <h3 class="section-title" style="font-size: 36px;"><strong>Competition Details</strong></h3>
             <br>
+            <br>
+            <p><strong style="font-size: 25px;">Participation and Timeline</strong></p>
+            <span style="font-size: 20px;">
+            <p>
+              You can participate either individually or in teams of two (and yes, if in a team of two each team member will win the prize!) Please fill out the following Google form before downloading the competition data: <a href="https://forms.gle/d1gchUT2ZUXqvDXK9">Link to Form!</a>
+              <br>
+              <br>
+              The competition will run until <strong>May 1</strong>. 
+            </p>  
+            <br>
+          </span>    
             <p><strong style="font-size: 25px;">Task and Dataset</strong></p>
             <span style="font-size: 20px;">
             <p style="font-size: 20px;">
-              We’re giving you a dataset of X movies with a bunch of information (“features”) about each movie. Your task is to predict the movie’s revenue (in $) from these features. Concretely, here are some of the features we’ll be providing you:
+              We’re giving you a dataset of over 3,000 movies with a bunch of information (“features”) about each movie. Your task is to predict the movie’s revenue (in $) from these features. Concretely, here are some of the features we’ll be providing you:
             </p>
               <li> Movie Budget </li>
               <li> Genre(s) </li>
@@ -173,12 +187,13 @@
             <p>
               Each movie in the dataset is associated with an ID. We ask you to submit your predictions for the test set in a CSV file with the format:
             </p>
+            <pre>
             MovieID, prediction
-            <br>
             MovieID, prediction
-              <br>
+            </pre>
+            We’ll be evaluating your predictions using <strong>RMSLE</strong>, or Root Mean-Squared Log Error. This metric computes the squared difference between the log of your prediction and log of the actual value. Here’s the equation for RMSLE, where xi is your prediction and yi is the actual value:
             <br>
-            We’ll be evaluating your predictions using <strong>RMSLE</strong>, or Root Mean-Squared Log Error. This metric computes the squared difference between the log of your prediction and log of the actual value. Here’s the equation for RMSLE, where xiis your prediction and yiis the actual value:
+            $$  RMSLE = \sqrt{\frac{1}{n}\Sigma_{i=1}^{n}{(\log(x_i+1) - \log(y_i+1))^2}} $$
             <br>
             <br>
             This next part is <strong>very important</strong>. On the backend we’ve divided up the test set into a public and private test set. When you submit your predictions for the test set, you can either submit to the public or private leaderboard. Submitting to the public leaderboard allows you to see how you measure up to other participants, and you can submit up to ten times per day. However, your final score will be evaluated on the private leaderboard, for which you only have three submissions total. Do not forget to submit to the private leaderboard, but also use your submissions sparingly! The reason we do this is so that participants can’t “overfit” to the public leaderboard by constantly tweaking parameters of their model and resubmitting.
