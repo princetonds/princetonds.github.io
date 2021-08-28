@@ -1202,6 +1202,55 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: rgba(0, 0, 0, 0.7);
 }
 
+/* Grant Section
+--------------------------------*/
+.member4 {
+  width: 50 px;
+  height:50 px;
+}
+
+.containersplit .split {
+  /* height: 100%;
+  width: 50%; */
+  width:50%;
+  height:50%;
+  position:absolute;
+  z-index:1;
+  top:60%;
+  /* position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px; */
+}
+
+/* Control the left side */
+.left {
+  left: 10%;
+  background-color: #111;
+}
+
+/* Control the right side */
+.right {
+  right: 10%;
+  background-color: red;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
 /* Contact Section
 --------------------------------*/
 #contact {
